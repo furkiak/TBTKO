@@ -1,6 +1,9 @@
 # TBTKO
 Knight Online Pvp Server
 
+
+Kısaca Özet: Detaylı Anlatım Ve Client Linki Yakında Gelecektir.
+
 Özellikler:
 Dosyaların tamamı internetten bulunup tarafımdan düzenlenmiş ve hataların çoğu giderilmiştir.
 Var olan son knight görünümü ile aynıdır.
@@ -56,7 +59,4 @@ Sknight
 
 
 6: Client içerisinden Launcher ile giriş yapın.
-
-
-Eksikler Hatalar için görüş çözüm ve bildirimlerinizi bekliyorum.
 
