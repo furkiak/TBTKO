@@ -1,0 +1,39 @@
+﻿  StdAfx.cpp
+c:\users\furki\desktop\ko pvp furkiak\src\shared\listensocketwin32.h(25): warning C4996: 'WSASocketA': Use WSASocketW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(3457): note: see declaration of 'WSASocketA'
+  c:\users\furki\desktop\ko pvp furkiak\src\shared\listensocketwin32.h(23): note: while compiling class template member function 'ListenSocket<T>::ListenSocket(SocketMgr *,const char *,uint32)'
+          with
+          [
+              T=CGameSocket
+          ]
+  c:\users\furki\desktop\ko pvp furkiak\src\shared\kosocketmgr.h(96): note: see reference to function template instantiation 'ListenSocket<T>::ListenSocket(SocketMgr *,const char *,uint32)' being compiled
+          with
+          [
+              T=CGameSocket
+          ]
+  c:\users\furki\desktop\ko pvp furkiak\src\shared\kosocketmgr.h(96): note: see reference to class template instantiation 'ListenSocket<T>' being compiled
+          with
+          [
+              T=CGameSocket
+          ]
+  c:\users\furki\desktop\ko pvp furkiak\src\shared\kosocketmgr.h(90): note: while compiling class template member function 'bool KOSocketMgr<CGameSocket>::Listen(std::string,uint16,uint16)'
+  c:\users\furki\desktop\ko pvp furkiak\src\aiserver\serverdlg.h(142): note: see reference to class template instantiation 'KOSocketMgr<CGameSocket>' being compiled
+c:\users\furki\desktop\ko pvp furkiak\src\shared\listensocketwin32.h(37): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2238): note: see declaration of 'gethostbyname'
+  AIUser.cpp
+  ServerDlg.cpp
+  RoomEvent.cpp
+  PathFind.cpp
+  Party.cpp
+  NpcThread.cpp
+  NpcMagicProcess.cpp
+  Npc.cpp
+  MAP.cpp
+  main.cpp
+  GameSocket.cpp
+  Unit.cpp
+  MagicProcess.cpp
+  Generating Code...
+  N3ShapeMgr.cpp
+  proj-AIServer.vcxproj -> C:\Users\furki\Desktop\KO PVP Furkiak\src\..\bin\Debug\AIServer.exe
+  proj-AIServer.vcxproj -> C:\Users\furki\Desktop\KO PVP Furkiak\src\..\bin\Debug\AIServer.pdb (Full PDB)

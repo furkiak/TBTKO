@@ -1,0 +1,35 @@
+﻿  tstring.cpp
+  signal_handler.cpp
+  globals.cpp
+  OdbcRecordset.cpp
+  OdbcParameter.cpp
+  OdbcConnection.cpp
+  OdbcCommand.cpp
+  Thread.cpp
+  SocketWin32.cpp
+  SocketOpsWin32.cpp
+c:\users\furki\desktop\ko pvp furkiak\src\shared\socketopswin32.cpp(9): warning C4996: 'WSASocketA': Use WSASocketW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(3457): note: see declaration of 'WSASocketA'
+  SocketMgr.cpp
+  Socket.cpp
+c:\users\furki\desktop\ko pvp furkiak\src\shared\socket.cpp(22): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2238): note: see declaration of 'gethostbyname'
+c:\users\furki\desktop\ko pvp furkiak\src\shared\socket.cpp(90): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868): note: see declaration of 'inet_ntoa'
+  ReferenceObject.cpp
+  RWLock.cpp
+  KOSocket.cpp
+  JvCryption.cpp
+  HardwareInformation.cpp
+  Condition.cpp
+  CircularBuffer.cpp
+  Generating Code...
+  lzf.c
+  crc32.c
+  Generating Code...
+  TimeThread.cpp
+  SMDFile.cpp
+  Ini.cpp
+  DebugUtils.cpp
+  Generating Code...
+  shared.vcxproj -> C:\Users\furki\Desktop\KO PVP Furkiak\src\..\bin\Debug\shared.lib
