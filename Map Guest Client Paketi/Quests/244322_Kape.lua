@@ -1,14 +1,14 @@
--- [°æºñº´]ÄÉÀÌÇÁ
+-- [ï¿½ï¿½ï¿½]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
--- EVENT ´Â 100¹ø ÀÌ»ó ºÎÅÍ »ç¿ëÇÏ¶ó
+-- EVENT ï¿½ï¿½ 100ï¿½ï¿½ ï¿½Ì»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½
 
--- UID : ¼­¹ö¿¡¼­ Á¦°øÇÏ´Â À¯Àú¹øÈ£
--- EVENT : ¼­¹ö¿¡¼­ Á¦°øÇÏ´Â Äù½ºÆ® ¹øÈ£
--- STEP : ¼­¹ö¿¡¼­ Á¦°øÇÏ´Â Äù½ºÆ® ³»ºÎ ´Ü°è
+-- UID : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£
+-- EVENT : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½È£
+-- STEP : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½Ü°ï¿½
 
--- À§ÀÇ ¼¼°¡Áö ÆÄ¶ó¸ŞÅ¸´Â ·ç¾Æ ½ÇÇà½Ã Ç×»ó Àü¿ªº¯¼ö·Î Á¦°ø?
+-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ä¶ï¿½ï¿½Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½?
 
--- Áö¿ªº¯¼ö ¼±¾ğ...
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...
 local UserClass;
 local QuestNum;
 local Ret = 0;
@@ -17,14 +17,14 @@ local NPC = 24432;
 
 if EVENT == 160 then
 	QuestNum = SearchQuest(UID, NPC);
-		if QuestNum == 0 then --ÇØ´ç NPC¿¡°Ô ÇÒ¼ö ÀÖ´Â Äù½ºÆ®°¡ 0°³ ÀÏ¶§ 
+		if QuestNum == 0 then --ï¿½Ø´ï¿½ NPCï¿½ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ 0ï¿½ï¿½ ï¿½Ï¶ï¿½ 
           -- SelectMsg(UID, 2. -1...........)
 			 SelectMsg(UID, 2, -1, 8255, NPC, 10, 163);
-			 --SetQuestStep(UID, EVENT, 1); -- ¹» ÇÏ´Â °É±î?
-			 Ret = 1; -- ÀÌ°Ç ¿Ö ÀúÀå ½ÃÄÑ¿ä? ±×³É RETURNÀº ¾ÈµÇ³ª¿ä?
-		elseif QuestNum > 1 and  QuestNum < 100 then--ÇØ´ç NPC¿¡°Ô ÇÒ¼ö ÀÖ´Â Äù½ºÆ®°¡ 1°³ ÀÏ¶§ 
+			 --SetQuestStep(UID, EVENT, 1); -- ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½É±ï¿½?
+			 Ret = 1; -- ï¿½Ì°ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ¿ï¿½? ï¿½×³ï¿½ RETURNï¿½ï¿½ ï¿½ÈµÇ³ï¿½ï¿½ï¿½?
+		elseif QuestNum > 1 and  QuestNum < 100 then--ï¿½Ø´ï¿½ NPCï¿½ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ 1ï¿½ï¿½ ï¿½Ï¶ï¿½ 
           NpcMsg(UID, 8257, NPC)
-      else --ÇØ´ç NPC¿¡°Ô ÇÒ¼ö ÀÖ´Â Äù½ºÆ®°¡ 1°³ ÀÌ»ó ÀÏ¶§ 
+      else --ï¿½Ø´ï¿½ NPCï¿½ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ 1ï¿½ï¿½ ï¿½Ì»ï¿½ ï¿½Ï¶ï¿½ 
           EVENT = QuestNum
 		end
 end
@@ -35,10 +35,10 @@ end
 
 
 
--- [°æºñº´]ÄÉÀÌÇÁ Å¬¸¯½Ã Äù½ºÆ® Ã¼Å©  
+-- [ï¿½ï¿½ï¿½]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® Ã¼Å©  
 
 -------------------------------
---------¶óµå ¿ÀÅ© »ç³É---------
+--------ï¿½ï¿½ï¿½ ï¿½ï¿½Å© ï¿½ï¿½ï¿½---------
 -------------------------------
 
 if EVENT == 8750 then
@@ -70,9 +70,9 @@ local MonsterSub = 0;
 
 if EVENT == 8752 then
    MonsterSub = ExistMonsterQuestSub(UID);
-   if MonsterSub == 0 then -- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ¾øÀ»¶§
+   if MonsterSub == 0 then -- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 2, 853, 8372, NPC, 10, 8755);
-	else-- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ÀÖÀ»¶§
+	else-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 2, 853, 8373, NPC, 10, 163);
    end
 end
@@ -81,7 +81,7 @@ if EVENT == 8755 then
     SelectMsg(UID, 4, 853, 8374, NPC, 22, 8753, 23, 8754);
 end
 
-if EVENT == 8753 then --¼ö¶ô½Ã
+if EVENT == 8753 then --ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
    Class = CheckClass(UID);
     if Class == 1 or Class == 5 or Class == 6 then
     SaveEvent(UID, 8680);
@@ -95,11 +95,11 @@ if EVENT == 8753 then --¼ö¶ô½Ã
 end
 
 if EVENT == 8754 then
-   SaveEvent(UID, 8683); -- °ÅÀı½Ã 
+   SaveEvent(UID, 8683); -- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 end
 
 
--- Àç·á¸¦ ´Ù ¸ğ¾ÒÀ»¶§ ½Ãµå ¶Ç µîÀå 
+-- ï¿½ï¿½á¸¦ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ãµï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 
 if EVENT == 8760 then
    Class = CheckClass(UID);
@@ -124,9 +124,9 @@ end
 
 if EVENT == 8756 then
     MonsterCount  = CountMonsterQuestSub(UID, 32001);
-    if  MonsterCount < 30 then -- »ç³ÉÀÌ ³²¾ÒÀ»¶§
+    if  MonsterCount < 30 then -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
        SelectMsg(UID, 2, 853, 8376, NPC, 10, 8757);
-    else -- »ç³ÉÀÌ ¿Ï·á µÇ¾úÀ»¶§ 
+    else -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ 
        Class = CheckClass(UID);
         if Class == 1 or Class == 5 or Class == 6 or Class == 3 or Class == 9 or Class == 10 or Class == 4 or Class == 11 or Class == 12 then
         SelectMsg(UID, 4, 853, 8377, NPC, 10, 8758, 27, 163);
@@ -188,11 +188,11 @@ if EVENT == 8758 then
 end
 
 -------------------------------
-------¶óµå ¿ÀÅ© »ç³É ³¡--------
+------ï¿½ï¿½ï¿½ ï¿½ï¿½Å© ï¿½ï¿½ï¿½ ï¿½ï¿½--------
 -------------------------------
 
 -------------------------------
--------¸Ş°£Å×¸®¿Â »ç³É---------
+-------ï¿½Ş°ï¿½ï¿½×¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½---------
 -------------------------------
 
 if EVENT == 8950 then
@@ -220,9 +220,9 @@ local MonsterSub = 0;
 
 if EVENT == 8952 then
    MonsterSub = ExistMonsterQuestSub(UID);
-   if MonsterSub == 0 then -- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ¾øÀ»¶§
+   if MonsterSub == 0 then -- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 2, 857, 8226, NPC, 10, 8955);
-	else-- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ÀÖÀ»¶§
+	else-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 2, 857, 8259, NPC, 10, 163);
    end
 end
@@ -231,7 +231,7 @@ if EVENT == 8955 then
     SelectMsg(UID, 4, 857, 8227, NPC, 22, 8953, 23, 8954);
 end
 
-if EVENT == 8953 then --¼ö¶ô½Ã
+if EVENT == 8953 then --ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
    Class = CheckClass(UID);
     if Class == 1 or Class == 5 or Class == 6 then
     SaveEvent(UID, 8764);
@@ -245,11 +245,11 @@ if EVENT == 8953 then --¼ö¶ô½Ã
 end
 
 if EVENT == 8954 then
-   SaveEvent(UID, 8767); -- °ÅÀı½Ã 
+   SaveEvent(UID, 8767); -- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 end
 
 
--- Àç·á¸¦ ´Ù ¸ğ¾ÒÀ»¶§ ½Ãµå ¶Ç µîÀå 
+-- ï¿½ï¿½á¸¦ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ãµï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 
 if EVENT == 8960 then
    Class = CheckClass(UID);
@@ -274,9 +274,9 @@ end
 
 if EVENT == 8956 then
     MonsterCount  = CountMonsterQuestSub(UID, 32001);
-    if  MonsterCount < 30 then -- »ç³ÉÀÌ ³²¾ÒÀ»¶§
+    if  MonsterCount < 30 then -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      SelectMsg(UID, 2, 857, 8376, NPC, 10, 8957);
-    else -- »ç³ÉÀÌ ¿Ï·á µÇ¾úÀ»¶§ 
+    else -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ 
      SelectMsg(UID, 4, 857, 8387, NPC, 10, 8958, 27, 163);
     end
 end
@@ -333,11 +333,11 @@ if EVENT == 8958 then
 end
 
 -------------------------------
--------¸Ş°£Å×¸®¿Â »ç³É ³¡------
+-------ï¿½Ş°ï¿½ï¿½×¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½------
 -------------------------------
 
 -------------------------------
----------½ºÄİ¶ó »ç³É-----------
+---------ï¿½ï¿½ï¿½İ¶ï¿½ ï¿½ï¿½ï¿½-----------
 -------------------------------
 
 if EVENT == 8170 then
@@ -365,9 +365,9 @@ local MonsterSub = 0;
 
 if EVENT == 8172 then
    MonsterSub = ExistMonsterQuestSub(UID);
-   if MonsterSub == 0 then -- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ¾øÀ»¶§
+   if MonsterSub == 0 then -- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 2, 859, 8390, NPC, 10, 8175);
-	else-- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ÀÖÀ»¶§
+	else-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 2, 859, 8259, NPC, 10, 163);
    end
 end
@@ -376,7 +376,7 @@ if EVENT == 8175 then
     SelectMsg(UID, 4, 859, 8391, NPC, 22, 8173, 23, 8174);
 end
 
-if EVENT == 8173 then --¼ö¶ô½Ã
+if EVENT == 8173 then --ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
    Class = CheckClass(UID);
     if Class == 1 or Class == 5 or Class == 6 then
     SaveEvent(UID, 8806);
@@ -390,11 +390,11 @@ if EVENT == 8173 then --¼ö¶ô½Ã
 end
 
 if EVENT == 8174 then
-   SaveEvent(UID, 8809); -- °ÅÀı½Ã 
+   SaveEvent(UID, 8809); -- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 end
 
 
--- Àç·á¸¦ ´Ù ¸ğ¾ÒÀ»¶§ ½Ãµå ¶Ç µîÀå 
+-- ï¿½ï¿½á¸¦ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ãµï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 
 if EVENT == 8180 then
    Class = CheckClass(UID);
@@ -419,9 +419,9 @@ end
 
 if EVENT == 8176 then
     MonsterCount  = CountMonsterQuestSub(UID, 32001);
-    if  MonsterCount < 10 then -- »ç³ÉÀÌ ³²¾ÒÀ»¶§
+    if  MonsterCount < 10 then -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      SelectMsg(UID, 2, 859, 8376, NPC, 10, 8177);
-    else -- »ç³ÉÀÌ ¿Ï·á µÇ¾úÀ»¶§ 
+    else -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ 
      SelectMsg(UID, 4, 859, 8392, NPC, 10, 8178, 27, 163);
     end
 end
@@ -478,11 +478,11 @@ if EVENT == 8178 then
 end
 
 -------------------------------
---------½ºÄİ¶ó »ç³É ³¡---------
+--------ï¿½ï¿½ï¿½İ¶ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½---------
 -------------------------------
 
 -------------------------------
------------±×·¼ »ç³É-----------
+-----------ï¿½×·ï¿½ ï¿½ï¿½ï¿½-----------
 -------------------------------
 
 if EVENT == 9060 then
@@ -497,9 +497,9 @@ local MonsterSub = 0;
 
 if EVENT == 9062 then
    MonsterSub = ExistMonsterQuestSub(UID);
-   if MonsterSub == 0 then -- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ¾øÀ»¶§
+   if MonsterSub == 0 then -- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	SelectMsg(UID, 2, 874, 8420, NPC, 10, 9070);
-   else-- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ÀÖÀ»¶§
+   else-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  	SelectMsg(UID, 2, 874, 8422, NPC, 10, 163);
 	end
 end
@@ -516,7 +516,7 @@ if EVENT == 9064 then
    SaveEvent(UID, 9121);
 end
 
--- »ç³É ¿Ï·á½Ã ½Ãµå¿Í ¹Ì¼¿ÀÇ µîÀå
+-- ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ï¿½ ï¿½Ãµï¿½ï¿½ ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 if EVENT == 9065 then
    SelectMsg(UID, 1, 874, 8423, NPC, 3014, 163);
@@ -527,9 +527,9 @@ local MonsterCount = 0;
 
 if EVENT == 9067 then
    MonsterCount  = CountMonsterQuestSub(UID, 32001);
-   if  MonsterCount < 30 then -- »ç³ÉÀÌ ³²¾ÒÀ»¶§
+   if  MonsterCount < 30 then -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       SelectMsg(UID, 2, 874, 8424, NPC, 10, 9068);
-   else-- »ç³ÉÀÌ ¿Ï·á µÇ¾úÀ»¶§ 
+   else-- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ 
       SelectMsg(UID, 4, 874, 8425, NPC, 10, 9069, 27, 163);
    end
 end
@@ -550,11 +550,11 @@ if EVENT == 9069 then
 end
 
 -------------------------------
-----------±×·¼ »ç³É ³¡---------
+----------ï¿½×·ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½---------
 -------------------------------
 
 -------------------------------
------------¸®Ä¡ »ç³É-----------
+-----------ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½-----------
 -------------------------------
 
 if EVENT == 9140 then
@@ -586,9 +586,9 @@ local MonsterSub = 0;
 
 if EVENT == 9143 then
    MonsterSub = ExistMonsterQuestSub(UID);
-   if MonsterSub == 0 then -- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ¾øÀ»¶§
+   if MonsterSub == 0 then -- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 1, 882, 8205, NPC, 10, 9144);
-   else-- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ÀÖÀ»¶§
+   else-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  	SelectMsg(UID, 1, 882, 8178, NPC, 10, 163);
    end
 end
@@ -597,7 +597,7 @@ if EVENT == 9144 then
     SelectMsg(UID, 1, 882, 8206, NPC, 22, 9145, 23, 9146);
 end
 
-if EVENT == 9145 then --¼ö¶ô½Ã
+if EVENT == 9145 then --ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
    ShowMap(UID, 17);
    Class = CheckClass(UID);
     if Class == 1 or Class == 5 or Class == 6 then
@@ -612,10 +612,10 @@ if EVENT == 9145 then --¼ö¶ô½Ã
 end
 
 if EVENT == 9146 then
-   SaveEvent(UID, 9259); -- °ÅÀı½Ã 
+   SaveEvent(UID, 9259); -- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 end
 
--- 882¹ø ¼Ó¼º 0, 4¹øÀÏ °æ¿ì
+-- 882ï¿½ï¿½ ï¿½Ó¼ï¿½ 0, 4ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 
 if EVENT == 9150 then
    SelectMsg(UID, 2, 882, 8207, NPC, 4244, 9151);
@@ -625,14 +625,14 @@ local MonsterSub = 0;
 
 if EVENT == 9151 then
    MonsterSub = ExistMonsterQuestSub(UID);
-   if MonsterSub == 0 then -- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ¾øÀ»¶§
+   if MonsterSub == 0 then -- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 4, 882, 8435, NPC, 3018, 9152, 3019, 9159);
-   else-- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ÀÖÀ»¶§
+   else-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 2, 882, 8436, NPC, 4242, 163);
    end
 end
 
-if EVENT == 9152 then --¼ö¶ô½Ã
+if EVENT == 9152 then --ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
    Class = CheckClass(UID);
     if Class == 1 or Class == 5 or Class == 6 then
     SaveEvent(UID, 9256);
@@ -646,11 +646,11 @@ if EVENT == 9152 then --¼ö¶ô½Ã
 end
 
 if EVENT == 9159 then
-   SaveEvent(UID, 9259); -- °ÅÀı½Ã 
+   SaveEvent(UID, 9259); -- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 end
 
 
--- Àç·á¸¦ ´Ù ¸ğ¾ÒÀ»¶§ ½Ãµå¿Í ¹Ì¼¿ÀÇ µîÀå 
+-- ï¿½ï¿½á¸¦ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ãµï¿½ï¿½ ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 
 if EVENT == 9153 then
    Class = CheckClass(UID);
@@ -673,15 +673,15 @@ if EVENT == 9154 then
     SelectMsg(UID, 1, 882, 8434, NPC, 57, 163);
 end
 
--- 836ÀÌ 1¹ø 3¹øÀÎ °æ¿ì 
+-- 836ï¿½ï¿½ 1ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ 
 
 local MonsterCount = 0;
 
 if EVENT == 9155 then
    MonsterCount  = CountMonsterQuestSub(UID, 32001);
-   if  MonsterCount < 10 then -- »ç³ÉÀÌ ³²¾ÒÀ»¶§
+   if  MonsterCount < 10 then -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 2, 882, 8437, NPC, 10, 9157);
-   else-- »ç³ÉÀÌ ¿Ï·á µÇ¾úÀ»¶§ 
+   else-- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ 
     SelectMsg(UID, 4, 882, 8438, NPC, 10, 9158, 27, 163);
    end
 end
@@ -738,7 +738,7 @@ if EVENT == 9158 then
 end
 
 -------------------------------
----------¸®Ä¡ »ç³É ³¡----------
+---------ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ ï¿½ï¿½----------
 -------------------------------
 --Hell Hound hunt
 if EVENT == 9322 then
@@ -749,10 +749,10 @@ local MonsterSub = 0;
 
 if EVENT == 9323 then
    MonsterSub = ExistMonsterQuestSub(UID);
-   if MonsterSub == 0 then -- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ¾øÀ»¶§
+   if MonsterSub == 0 then -- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       SelectMsg(UID, 4, 894, 8676, 24432, 22, 9324, 23, 9325);
 
-	else-- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ÀÖÀ»¶§
+	else-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  		SelectMsg(UID, 2, 894, 8676, 24432, 10, 168);
    end
 end
@@ -762,26 +762,26 @@ if EVENT == 9324 then
    SaveEvent(UID, 9340);
 end
 
--- Àç·á¸¦ ´Ù ¸ğ¾ÒÀ»¶§ ½Ãµå¿Í ¹Ì¼¿ÀÇ ¶Ç µîÀå 
+-- ï¿½ï¿½á¸¦ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ãµï¿½ï¿½ ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 if EVENT == 9325 then
    SaveEvent(UID, 9342);
    NATION = CheckNation(UID);
-   if NATION == 1 then -- Ä«·ç½º ÀÏ¶§
+   if NATION == 1 then -- Ä«ï¿½ç½º ï¿½Ï¶ï¿½
       SelectMsg(UID, 1, 894, 8676, 24432, 14, 168);
-   elseif NATION == 2 then -- ¿¤¸ğÀÏ¶§
+   elseif NATION == 2 then -- ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½
       SelectMsg(UID, 1, 894, 8676, 24432, 14, 168);
    end
 end
 
--- 894ÀÇ 1¹ø 3¹øÀÎ °æ¿ì 
+-- 894ï¿½ï¿½ 1ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ 
 
 local MonsterCount = 0;
 
 if EVENT == 9327 then
    MonsterCount  = CountMonsterQuestSub(UID, 32001);
-   if  MonsterCount < 250 then -- »ç³ÉÀÌ ³²¾ÒÀ»¶§
+   if  MonsterCount < 250 then -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       SelectMsg(UID, 2, 894, 8676, 24432, 10, 9328);
-   else-- »ç³ÉÀÌ ¿Ï·á µÇ¾úÀ»¶§ 
+   else-- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ 
       SelectMsg(UID, 4, 894, 8676, 24432, 10, 9329, 27, 9328);
    end
 end
@@ -816,10 +816,10 @@ local MonsterSub = 0;
 
 if EVENT == 9343 then
    MonsterSub = ExistMonsterQuestSub(UID);
-   if MonsterSub == 0 then -- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ¾øÀ»¶§
+   if MonsterSub == 0 then -- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       SelectMsg(UID, 4, 897, 8680, 24432, 22, 9344, 23, 9345);
 
-	else-- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ÀÖÀ»¶§
+	else-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  		SelectMsg(UID, 2, 897, 8680, 24432, 10, 168);
    end
 end
@@ -829,26 +829,26 @@ if EVENT == 9344 then
    SaveEvent(UID, 9364);
 end
 
--- Àç·á¸¦ ´Ù ¸ğ¾ÒÀ»¶§ ½Ãµå¿Í ¹Ì¼¿ÀÇ ¶Ç µîÀå 
+-- ï¿½ï¿½á¸¦ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ãµï¿½ï¿½ ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 if EVENT == 9345 then
    SaveEvent(UID, 9366);
    NATION = CheckNation(UID);
-   if NATION == 1 then -- Ä«·ç½º ÀÏ¶§
+   if NATION == 1 then -- Ä«ï¿½ç½º ï¿½Ï¶ï¿½
       SelectMsg(UID, 1, 897, 8680, 24432, 14, 168);
-   elseif NATION == 2 then -- ¿¤¸ğÀÏ¶§
+   elseif NATION == 2 then -- ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½
       SelectMsg(UID, 1, 897, 8680, 24432, 14, 168);
    end
 end
 
--- 897ÀÇ 1¹ø 3¹øÀÎ °æ¿ì 
+-- 897ï¿½ï¿½ 1ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ 
 
 local MonsterCount = 0;
 
 if EVENT == 9347 then
    MonsterCount  = CountMonsterQuestSub(UID, 32001);
-   if  MonsterCount < 250 then -- »ç³ÉÀÌ ³²¾ÒÀ»¶§
+   if  MonsterCount < 250 then -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       SelectMsg(UID, 2, 897, 8680, 24432, 10, 9348);
-   else-- »ç³ÉÀÌ ¿Ï·á µÇ¾úÀ»¶§ 
+   else-- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ 
       SelectMsg(UID, 4, 897, 8680, 24432, 10, 9349, 27, 9348);
    end
 end
@@ -899,9 +899,9 @@ local MonsterSub = 0;
 
 if EVENT == 9432 then
    MonsterSub = ExistMonsterQuestSub(UID);
-   if MonsterSub == 0 then -- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ¾øÀ»¶§
+   if MonsterSub == 0 then -- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 2, 911, 8760, 24432, 10, 9435);
-	else-- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ÀÖÀ»¶§
+	else-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 2, 911, 8760, 24432, 10, 193);
    end
 end
@@ -910,7 +910,7 @@ if EVENT == 9435 then
     SelectMsg(UID, 4, 911, 8760, 24432, 22, 9433, 23, 9434);
 end
 
-if EVENT == 9433 then --¼ö¶ô½Ã
+if EVENT == 9433 then --ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
    Class = CheckClass(UID);
     if Class == 1 or Class == 5 or Class == 6 then
     SaveEvent(UID, 9472);
@@ -927,7 +927,7 @@ if EVENT == 9434 then    SaveEvent(UID, 9475);
 end
 
 
--- Àç·á¸¦ ´Ù ¸ğ¾ÒÀ»¶§ ½Ãµå ¶Ç µîÀå 
+-- ï¿½ï¿½á¸¦ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ãµï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 
 if EVENT == 9440 then
    Class = CheckClass(UID);
@@ -952,9 +952,9 @@ end
 
 if EVENT == 9436 then
     MonsterCount  = CountMonsterQuestSub(UID, 32001);
-    if  MonsterCount < 80 then -- »ç³ÉÀÌ ³²¾ÒÀ»¶§
+    if  MonsterCount < 80 then -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      SelectMsg(UID, 2, 911, 8760, 24432, 10, 9437);
-    else -- »ç³ÉÀÌ ¿Ï·á µÇ¾úÀ»¶§ 
+    else -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ 
      SelectMsg(UID, 4, 911, 8760, 24432, 10, 9438, 27, 193);
     end
 end
@@ -1031,9 +1031,9 @@ local MonsterSub = 0;
 
 if EVENT == 9452 then
    MonsterSub = ExistMonsterQuestSub(UID);
-   if MonsterSub == 0 then -- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ¾øÀ»¶§
+   if MonsterSub == 0 then -- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 2, 913, 8762, 24432, 10, 9455);
-	else-- ¸ó½ºÅÍ ¼­ºê Äù½ºÆ®°¡ ÀÖÀ»¶§
+	else-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SelectMsg(UID, 2, 913, 8762, 24432, 10, 193);
    end
 end
@@ -1042,7 +1042,7 @@ if EVENT == 9455 then
     SelectMsg(UID, 4, 913, 8762, 24432, 22, 9453, 23, 9454);
 end
 
-if EVENT == 9453 then --¼ö¶ô½Ã
+if EVENT == 9453 then --ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
    Class = CheckClass(UID);
     if Class == 1 or Class == 5 or Class == 6 then
     SaveEvent(UID, 9514);
@@ -1059,7 +1059,7 @@ if EVENT == 9454 then    SaveEvent(UID, 9517);
 end
 
 
--- Àç·á¸¦ ´Ù ¸ğ¾ÒÀ»¶§ ½Ãµå ¶Ç µîÀå 
+-- ï¿½ï¿½á¸¦ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ãµï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 
 if EVENT == 9460 then
    Class = CheckClass(UID);
@@ -1084,9 +1084,9 @@ end
 
 if EVENT == 9456 then
     MonsterCount  = CountMonsterQuestSub(UID, 32001);
-    if  MonsterCount < 50 then -- »ç³ÉÀÌ ³²¾ÒÀ»¶§
+    if  MonsterCount < 50 then -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      SelectMsg(UID, 2, 913, 8762, 24432, 10, 9457);
-    else -- »ç³ÉÀÌ ¿Ï·á µÇ¾úÀ»¶§ 
+    else -- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ 
      SelectMsg(UID, 4, 913, 8762, 24432, 10, 9458, 27, 193);
     end
 end

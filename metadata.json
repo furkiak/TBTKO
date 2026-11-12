@@ -1,0 +1,8 @@
+{
+  "name": "Knight Online",
+  "description": "Modernized server engine, HD texture remaster & companion suite for Knight Online (AREKOLO) with live server orchestration, Aurion game logic, Anvil upgrade simulator, and zone explorer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
