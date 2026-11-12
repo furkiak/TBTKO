@@ -1,80 +1,36 @@
-# TBTKO
-Knight Online Pvp Server
+# Knight Online (AREKOLO) - Mobile Server Suite & Game Companion
 
+A modern Android application rewriting and modernizing the classic Knight Online (AREKOLO / TBTKO) PvP server engine and client suite. Built with Kotlin, Jetpack Compose, Material 3, Firebase Firestore, and Firebase AI Logic (Gemini API).
 
-Oluşturma Tarihi: 05.09.2016
+## Key Features
 
+1. **Modernized Server Engine & Telemetry**
+   - High-performance 60 TPS async ring-buffer architecture (replacing legacy 20 TPS Windows Winsock loops).
+   - Real-time orchestration of LoginServer (Port 15100), AIServer (Port 10020), GameServer (Port 20000), and Aurion Microservice Bridge.
+   - Interactive live administrative console with instant server directives (`/spawn`, `/tps`, `/drop_boost`, `/aurion_sync`, `/weather`, `/clear_logs`).
 
-Proje Amacı:
+2. **Aurion Game Logic Engine**
+   - Dynamic Loot & Drop Balancer preventing economy inflation.
+   - Sub-tick combat rollback & lag compensation.
+   - Interactive combat calculator (AP vs AC vs critical mitigation across Warrior, Rogue, Mage, Priest, Kurian).
+   - Dynamic loot drop simulator against authentic boss and mob tables.
 
-Yıllardır bir çok insanın hayatından aylar ve yıllar çalan oyunu sizler için düzgün bir şekilde geliştirmeye karar verdik. Tahribat.com Müritleri ile birlikte proje gelişimine başladık.
+3. **HD Textures & Magic Anvil Upgrade Simulator**
+   - 4K PBR Remaster Pack manager with real-time roughness, metallic, and emission glow sliders.
+   - Interactive Canvas Weapon Glow Visualizer with animated shader glows (+1 to +6 yellow, +7 electric blue, +8 emerald poison, +9 infernal gold, +10 void purple lightning).
+   - Authentic Magic Anvil upgrade forging with Blessed Upgrade Scrolls (BUS), Shadow Piece, Trina's Piece, suspenseful hammer animations, and success/burn outcomes.
 
-İlk Sürüm Özellikleri:
+4. **SQL & Firebase MSC Visualizer (`sql_Firebase visualizemsc`)**
+   - Interactive Message Sequence Chart (MSC / Sequence Diagram) showing real-time client-to-server-to-ODBC-to-Firestore packet flows.
+   - ODBC SQL Table Inspector (`USERDATA`, `KNIGHTS`, `ITEM_TABLE`, `ZONE_INFO`).
+   - One-click bidirectional synchronization between SQL tables and Cloud Firestore (`server_state` collection).
 
-Şuanki Sürüm içerisinde usko tarzı EXP. Usko Drop. Usko Upgrade Tabloları Yer almaktadır.
+5. **Gemini MCP Game Designer & Development Helper**
+   - Powered by Gemini 3.8 Flash via Firebase AI Logic (`Firebase.ai`).
+   - Real-time world, zone, and quest generator from natural language prompts.
+   - **Voice Micro Function**: Hands-free voice speech trigger for instant world design prompting.
+   - Automatic persistence of generated designs to Cloud Firestore (`world_designs` collection).
 
-Genie, Balık tutma, BDW Chaos, Peri, Krowaz, 83 Skilleri, Pet Çalışmaktadır.
-
-NPClerden toplu alım özellikleri ve görevler çalışmaktadır.
-
-
-
-
-Kurulum İçin Gereken Programlar:
-
-SQL Server 2014 (Management Studio): https://www.microsoft.com/en-us/download/details.aspx?id=42299
-
-Visual Studio 2015 Ultimate : https://www.visualstudio.com/tr-tr/downloads/download-visual-studio-vs.aspx
-
-
-
-Kurulum:
-
-1: Sourceları Bilgisayarınıza indirip. Visual Studio ile açarak Build(F6) Ediniz. 
-
-2: Build Edilen klasörün(Debug/Bin/) içerisine Map ve Guest Klasörünü Atınız.
-
-3: SQL Servera(Management Studio Kullanarak Giriş yapınız) Database'i restore ediniz. (Database Adı= kn_online)
-
-4: ODBC 32 Bit içerisine 
-
-
-data
-
-Kdata
-
-KN_Data
-
-kn_online
-
-Knight
-
-Knight_Account
-
-Knight_Data
-
-ko_game
-
-ko_main
-
-Sknight
-
-
-İsimlerinde database'inizle iletişimde olan sistem dns i oluşturunuz.
-
-
-5: Sırası İle Login Server - Ai Server - Game Serverı Çalıştırınız(Serverların Başlatılmasını Bekleyiniz)
-
-
-6: Client içerisinden Launcher ile giriş yapın. 
-
-https://yadi.sk/d/xuGISH8Vup8UB
-
-Not: Client'i ister bu adresten isterseniz başka bir adresten indirebilirsiniz. Fakat oyuna girmeden client patchi mutlaka yapınız.
-
-
-
-BUG Bildirimleri için : https://discordapp.com/channels/216582836247855104/216582836247855104
-
-İletişim İçin : furkiak@spaceandtab.com
-
+6. **World Zones & Lua Quest Explorer**
+   - Zone directory loaded directly from client `.smd` geometry files (Moradon, Colony Zone, El Morad, Luferson, Eslant, Bifrost, Ardream, Delos).
+   - Interactive Lua quest viewer displaying original quest dialogs, rewards, and Lua 5.2 VM scripts.

@@ -1,0 +1,43 @@
+{
+  "entities": {
+    "users": {
+      "path": "users/{userId}",
+      "description": "User profile and Knight Online character data",
+      "fields": {
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "nation": { "type": "string" },
+        "characterClass": { "type": "string" },
+        "level": { "type": "number" },
+        "coins": { "type": "number" },
+        "loyalty": { "type": "number" },
+        "updatedAt": { "type": "timestamp" }
+      }
+    },
+    "world_designs": {
+      "path": "world_designs/{designId}",
+      "description": "World zones, NPCs and quests designed with Gemini AI / Natural Language",
+      "fields": {
+        "title": { "type": "string" },
+        "authorId": { "type": "string" },
+        "zoneType": { "type": "string" },
+        "prompt": { "type": "string" },
+        "designContent": { "type": "string" },
+        "voiceInputTranscript": { "type": "string" },
+        "createdAt": { "type": "timestamp" }
+      }
+    },
+    "server_state": {
+      "path": "server_state/{docId}",
+      "description": "Global server cluster telemetry and SQL database visualization sync",
+      "fields": {
+        "status": { "type": "string" },
+        "onlinePlayers": { "type": "number" },
+        "karusCount": { "type": "number" },
+        "elmoCount": { "type": "number" },
+        "tps": { "type": "number" },
+        "updatedAt": { "type": "timestamp" }
+      }
+    }
+  }
+}
